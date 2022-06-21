@@ -20,9 +20,9 @@ pipeline {
 
         stage('Greetings') {
             steps {
-                scrip
+                script {
                     sh "echo Hello $MY_ENV"
-                    sh "echo Environment passed: GIT_COMMIT=$GIT_COMMIT"
+                     sh "echo Environment passed: GIT_COMMIT=$GIT_COMMIT"
                 }
             }
         }
