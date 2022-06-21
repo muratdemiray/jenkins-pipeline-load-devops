@@ -5,7 +5,7 @@ pipeline {
 
     environment {
     MY_ENV = "Devops"
-    //GIT_COMMIT= "${COMMIT}"
+    GIT_COMMIT= "${COMMIT}"
     }
 
     stages {     
