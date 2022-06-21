@@ -1,5 +1,7 @@
 pipeline {
-    agent none
+    // don't use 'agent any'
+    // 'agent none' allows the job to continue on the same node
+    agent any 
 
     environment {
     MY_ENV = "Devops"
