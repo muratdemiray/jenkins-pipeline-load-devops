@@ -21,6 +21,7 @@ pipeline {
             steps {
                 script {
                     sh "echo Hello $MY_ENV"
+                    sh "echo GIT_COMMIT=$GIT_COMMIT"
                 }
             }
         }
