@@ -5,6 +5,7 @@ pipeline {
 
     environment {
     MY_ENV = "Devops"
+    GIT_COMMIT= "${COMMIT}"
     }
 
     stages {     
@@ -21,7 +22,7 @@ pipeline {
             steps {
                 script {
                     sh "echo Hello $MY_ENV"
-                    sh "echo GIT_COMMIT=${env.GIT_COMMIT}"
+                    sh "echo GIT_COMMIT=$GIT_COMMIT"
                 }
             }
         }
