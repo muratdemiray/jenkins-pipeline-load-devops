@@ -6,7 +6,7 @@ pipeline {
     }
 
     stages {     
-        
+
         stage('List Files') {
             steps {
                 script {
@@ -15,7 +15,7 @@ pipeline {
             }
         }
 
-        stage('List Files') {
+        stage('Greetings') {
             steps {
                 script {
                     sh "echo Hello $MY_ENV"
