@@ -1,6 +1,6 @@
 pipeline {
     // don't use 'agent any'
-    // 'agent none' allows the job to continue on the same node
+    // 'agent none' allows the job to continue on the same node with the same files
     agent none 
 
     environment {
